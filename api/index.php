@@ -1,6 +1,6 @@
 <?php
 
-$access_token = "EAAH5qCyWCdcBAP0ddTZBNbVRdmqd43TZCnBJGFEwRZAmO76hlrXfWmVzBXO5xEsochEnlrQ88Tkrwm2B63KzXctLxXQ8RU6KKM9sWEFsGZAaBzmmMUoqVjfir1n5ufXgW8btvZAL41bNJ5S0IceHKUCioOLTqCLZCZCOOMlNz5fRAZDZD";
+$access_token = "EAADl7p3EviUBAH3aFW4k933PVdNzWZCkB2ievsGDZC6f8j2ECNOkSVhxzPZAiyq2swQsY7ZAyjaLXflBkkLgzPU1jgZCnOtHC2yv3bAbRccdpMkgGu0bXdCsvOn1MyvCGj1ySgobZAAID7XZBb7Qta9FHoBGq3ucr82eU5Qtye00SO507vMsZBev";
 $verify_token = "fb_time_bot";
 $hub_verify_token = null;
 if (isset($_REQUEST['hub_challenge'])) {
@@ -9,4 +9,8 @@ if (isset($_REQUEST['hub_challenge'])) {
 }
 if ($hub_verify_token === $verify_token) {
     echo $challenge;
+}
+
+if (isset($_REQUEST)) {
+    var_dump($_REQUEST);
 }
