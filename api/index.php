@@ -18,10 +18,10 @@ if ($_REQUEST['hub_verify_token'] === $hubVerifyToken) {
     exit;
 }
 
-if (isset($_REQUEST)) {
-    console_log($_REQUEST);
-    exit;
-}
+// if (isset($_REQUEST)) {
+//     console_log($_REQUEST);
+//     exit;
+// }
 
 
 
